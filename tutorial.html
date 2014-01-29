@@ -10,8 +10,8 @@
     window.onload = function() {
         engine = new J3D.Engine();
 
-        J3D.Loader.loadJSON("https://rawgithub.com/SputnixFox/tutorialHTML5/master/tutorial.json", function(jsmeshes) { 
-            J3D.Loader.loadJSON("https://rawgithub.com/SputnixFox/tutorialHTML5/master/tutorialScene.json", function(jsscene) { 
+        J3D.Loader.loadJSON("tutorial.json", function(jsmeshes) { 
+            J3D.Loader.loadJSON("tutorialScene.json", function(jsscene) { 
                 J3D.Loader.parseJSONScene(jsscene, jsmeshes, engine);
                 root = engine.scene.find("root");
                 chair = engine.scene.find("root/chair");
